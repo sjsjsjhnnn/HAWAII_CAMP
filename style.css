@@ -1,0 +1,342 @@
+body{
+    margin: 0;
+    font-family: Montserrat;
+}
+h2{
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+p{
+    font-size: 14px;
+}
+/*************Start what is hawaii shaka camp*************/
+
+.what_is_hawaii_shaka_camp{
+    width: 100%;
+    height: max-content;
+}
+.what_is_hawaii_shaka_camp h2{
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+.what_is_hawaii_shaka_camp .grid_block{
+    background: #7fb2d1;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.grid_block_what_is_hawaii_shaka_camp{
+    width: 80%;
+    height: max-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 1em;
+    margin: auto;
+}
+.grid_block_what_is_hawaii_shaka_camp .grid_block{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.grid_block_what_is_hawaii_shaka_camp .grid_block .img_block{
+    padding: 30px 0px 20px 0px;
+}
+.grid_block_what_is_hawaii_shaka_camp .grid_block p{
+    width: 80%;
+    text-align: center;
+    padding-bottom: 40px;
+}
+.orange_block_one{
+    width: 44px;
+    height: 44px;
+    background: #f27628;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.orange_block_two{
+    width: 44px;
+    height: 44px;
+    background: #f27628;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.inform_block{
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.white_block{
+    z-index: 1;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: calc(100% - 14px);
+    height: calc(100% - 14px);
+    background:white;
+    border-radius: 7px;
+}
+
+@media screen and (max-width: 950px){
+    .grid_block_what_is_hawaii_shaka_camp{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 2em;
+    }
+}
+/*************End what is hawaii shaka camp*************/
+
+/*************Start about us*************/
+.about_us{
+    width: 100%;
+    height: max-content;
+    padding-bottom: 120px;
+}
+.about_us h2{
+    padding-top: 120px;
+    padding-bottom: 70px;
+}
+.grid_block_about_us{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2em;
+}
+.grid_block_about_us .grid_block:nth-child(2){
+    display: flex;
+    align-items:center
+}
+.grid_block_about_us .grid_block .flex_block{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:90%;
+}
+.grid_block_about_us .grid_block .flex_block p{
+    width: 75%;
+    color: #f27628;
+}
+.grid_block_about_us .grid_block img{
+    width: 100%;
+    border-radius:7px;
+}
+.grid_block_about_us .flex_block:not(:nth-child(1)){
+    margin-top: 20px;
+}
+.text_bolder{
+    width: 100px;
+    font-weight: bolder;
+    text-align: center;
+}
+.text_bolder p{
+    margin: 0;
+}
+.text_bolder .number{
+    font-size: 30px;
+}
+.text_bolder .word{
+    font-size: 20px;
+}
+@media screen and (max-width: 950px){
+    .grid_block_about_us{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .grid_block_about_us .grid_block:nth-child(1){
+        order: 2;
+        margin-top: 40px;
+    }
+    .grid_block_about_us .grid_block:nth-child(2){
+        order: 1;
+    }
+
+}
+/*************End about us*************/
+
+/*************Start our photos*************/
+.our_photos{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 120px;
+}
+.our_photos h2{
+    padding-bottom: 70px;
+}
+.grid_block_our_photos{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    grid-column-gap: 1em;
+}
+.grid_block_two_photos{
+    display: grid;
+    grid-template-rows: 250px 250px;
+    grid-row-gap: 1em;
+}
+.grid_block_two_photos .img,.grid_block_one_photo{
+    border-radius: 7px;
+}
+.grid_block_two_photos:nth-child(1) .img:nth-child(1){
+    z-index: 2;
+    background:url(img/photo_one_our_photo.png);
+    background-size:cover;
+    background-position: center center;
+    z-index: 1;
+    box-shadow: 0px 0px 68px 16px rgba(209, 95, 94, 0.33);
+}
+.grid_block_two_photos:nth-child(1) .img:nth-child(2){
+    z-index: 2;
+    background:url(img/photo_two_our_photo.png);
+    background-size:cover;
+    background-position: center center;
+    box-shadow: 0px 0px 68px 16px rgba(218, 183, 133, 0.33);
+}
+.grid_block_two_photos .img:nth-child(1){
+    z-index: 2;
+    background:url(img/photo_fore_our_photo.png);
+    background-size:cover;
+    background-position: center center;
+    box-shadow: 0px 0px 68px 16px rgba(255, 205, 0, 0.33);
+}
+.grid_block_two_photos .img:nth-child(2){
+    z-index: 2;
+    background:url(img/photo_five_our_photo.png);
+    background-size:cover;
+    background-position: center center;
+    box-shadow: 0px 0px 68px 16px rgba(147, 97, 74, 0.33);
+}
+.grid_block_one_photo{
+    z-index: 1;
+    background: url(img/photo_three_our_photo.png);
+    background-size:cover;
+    background-position: center center;
+    box-shadow: 0px 0px 68px 16px rgba(2, 94, 165, 0.33);
+}
+.grid_block_one{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1em;
+}
+@media screen and (max-width: 950px){
+    .grid_block_our_photos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 1em;
+    }
+    .grid_block_two_photos:nth-child(2){
+        display: block;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px;
+        grid-column-gap: 1em;
+    }
+}
+@media screen and (max-width: 750px){
+    .grid_block_our_photos{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 1em;
+    }
+    .grid_block_one {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-row-gap: 1em;
+    }
+    .grid_block_one_photo{
+        height: 500px;
+        width: 400px;
+        margin: auto;
+    }
+    .grid_block_two_photos:nth-child(1){
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px;
+        grid-column-gap: 1em;
+    }
+}
+@media screen and (max-width: 520px){
+    .grid_block_two_photos:nth-child(1) {
+        display: block;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 250px;
+    }
+    .grid_block_two_photos:nth-child(2) {
+        display: block;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 250px 250px;
+    }
+    .grid_block_one_photo{
+        width: 100%;
+        height: 800px;
+    }
+    .grid_block_one_photo{
+        display: none;
+    }
+}
+/*************End our photos*************/
+
+/*************Start about us two*************/
+.about_us_two{
+    width: 100%;
+    height: max-content;
+    padding-bottom: 90px;
+}
+.about_us_two h2{
+    margin-bottom: 70px;
+}
+.grid_block_about_us_two{
+    width: 80%;
+    height: max-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 4em;
+}
+.grid_block_circle_and_text{
+    width: 80%;
+}
+.grid_block_about_us_two .circle{
+    width: 2.2px;
+    height: 2px;
+    border-radius: 50%;
+    border: 2px solid #f27628;
+}
+.grid_block_circle_and_text .circle{
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.grid_block_about_us_two .grid_block:nth-child(2){
+    background: url(img/photo_about_us_two.png);
+    background-size:cover;
+    background-position: center center;
+    border-radius: 10px;
+}
+@media screen and (max-width: 950px){
+    .grid_block_about_us_two{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .grid_block_about_us_two .grid_block:nth-child(1){
+        order: 2;
+        margin-top: 30px;
+    }
+    .grid_block_circle_and_text {
+        width: 100%;
+    }
+    .grid_block_about_us_two .grid_block:nth-child(2){
+        width: 100%;
+        height: 80%;
+        margin: auto;
+        background-position: center bottom;
+    }
+}
+/*************End about us two*************/
