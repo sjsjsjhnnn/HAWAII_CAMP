@@ -7,19 +7,18 @@ h2{
     text-align: center;
     text-transform: uppercase;
     margin: 0;
+    padding-top: 120px;
+    padding-bottom: 70px;
 }
 p{
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 500;
 }
 /*************Start what is hawaii shaka camp*************/
 
 .what_is_hawaii_shaka_camp{
     width: 100%;
     height: max-content;
-}
-.what_is_hawaii_shaka_camp h2{
-    padding-top: 90px;
-    padding-bottom: 70px;
 }
 .what_is_hawaii_shaka_camp .grid_block{
     background: #7fb2d1;
@@ -95,11 +94,6 @@ p{
 .about_us{
     width: 100%;
     height: max-content;
-    padding-bottom: 120px;
-}
-.about_us h2{
-    padding-top: 120px;
-    padding-bottom: 70px;
 }
 .grid_block_about_us{
     width: 80%;
@@ -130,7 +124,7 @@ p{
     margin-top: 20px;
 }
 .text_bolder{
-    width: 100px;
+    width: 140px;
     font-weight: bolder;
     text-align: center;
 }
@@ -163,10 +157,6 @@ p{
 .our_photos{
     width: 80%;
     margin: auto;
-    padding-bottom: 120px;
-}
-.our_photos h2{
-    padding-bottom: 70px;
 }
 .grid_block_our_photos{
     display: grid;
@@ -286,10 +276,6 @@ p{
 .about_us_two{
     width: 100%;
     height: max-content;
-    padding-bottom: 90px;
-}
-.about_us_two h2{
-    margin-bottom: 70px;
 }
 .grid_block_about_us_two{
     width: 80%;
@@ -340,3 +326,325 @@ p{
     }
 }
 /*************End about us two*************/
+
+/*************Start what_awaits_you*************/
+.what_awaits_you{
+    width: 100%;
+    height: max-content;
+}
+.grid_block_what_awaits_you{
+    width: 80%;
+    height: max-content;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+}
+.grid_block_what_awaits_you .grid_block{
+    border-radius: 7px;
+    overflow: hidden;
+    position: relative;
+}
+.grid_block_what_awaits_you .grid_block .blue_block{
+    width: 100%;
+    height: 100%;
+    background: #297eb2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+}
+.grid_block_what_awaits_you .grid_block:nth-child(1){
+    background:url(img/photo_one_what_awaits_you.png);
+    background-size:cover;
+    background-position:bottom center;
+}
+.grid_block_what_awaits_you .grid_block:nth-child(2){
+    background:url(img/photo_two_what_awaits_you.png);
+    background-size:cover;
+    background-position:center center;
+}
+.grid_block_what_awaits_you .grid_block:nth-child(3){
+    background:url(img/photo_three_what_awaits_you.png);
+    background-size:cover;
+    background-position:bottom center;
+}
+.grid_block_what_awaits_you .grid_block:nth-child(4){
+    background:url(img/photo_fore_what_awaits_you.png);
+    background-size:cover;
+    background-position:center center;
+}
+.grid_block_what_awaits_you .grid_block:nth-child(5){
+    background:url(img/photo_five_what_awaits_you.png);
+    background-size:cover;
+    background-position:center center;
+}
+.grid_block_what_awaits_you .grid_block:nth-child(6){
+    background:url(img/photo_six_what_awaits_you.png);
+    background-size:cover;
+    background-position:center center;
+}
+.grid_block_what_awaits_you .grid_block:nth-child(1):hover .blue_block,
+.grid_block_what_awaits_you .grid_block:nth-child(2):hover .blue_block,
+.grid_block_what_awaits_you .grid_block:nth-child(3):hover .blue_block,
+.grid_block_what_awaits_you .grid_block:nth-child(4):hover .blue_block,
+.grid_block_what_awaits_you .grid_block:nth-child(5):hover .blue_block,
+.grid_block_what_awaits_you .grid_block:nth-child(6):hover .blue_block{
+    background: rgb(41, 126, 178, 0.6);
+    opacity: 1;
+    transition: .5s;
+}
+.grid_block_what_awaits_you .grid_block .blue_block{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+.grid_block_what_awaits_you .grid_block .blue_block .circle{
+    width: 6px;
+    height: 6px;
+    border-radius:50%;
+    border: 2px solid white;
+}
+.grid_block_what_awaits_you .grid_block .blue_block span{
+    color:white;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 0 10px;
+}
+.what_awaits_you .button{
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+}
+.what_awaits_you button{
+    width: max-content;
+    height: 40px;
+    padding: 0px 50px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    background: #f27628;
+    border: none;
+    border-radius: 20px;
+    margin-top: 35px;
+    margin-bottom: 120px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+.what_awaits_you button:hover{
+    background: #e45700;
+    transition: 0.4s;
+}
+@media screen and (max-width: 950px) {
+    .grid_block_what_awaits_you{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 200px 200px;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+    }
+}
+@media screen and (max-width: 600px) {
+    .grid_block_what_awaits_you{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+    }
+}
+/*************End what_awaits_you*************/
+
+/*************Start registration*************/
+.registration{
+    width: 100%;
+    height: max-content;
+    background: url(img/photo_registration.png);
+    background-size:cover;
+    background-position: center center;
+    padding: 60px 0px;
+}
+.registration form{
+    width: 65%;
+    height: max-content;
+    margin: auto;
+    background: rgb(255, 255, 255,0.6);
+    padding: 25px 40px;
+    border-radius: 54px;
+}
+.registration form h3{
+    font-size: 25px;
+    margin: 0;
+}
+.name_and_number{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20%;
+}
+.name_and_number label{
+    width: 100%;
+}
+.name_and_number label:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: start;
+}
+.name_and_number label:nth-child(2) p{
+    align-self: flex-start;
+}
+.name_and_number input{
+    width:calc(100% - 10px);
+    height: 45px;
+    border: 2px solid #297eb2;
+    border-radius: 15px;
+}
+.registration textarea{
+    width: calc(100% - 5px);
+    resize: none;
+    border: 2px solid #297eb2;
+    border-radius: 15px;
+}
+.registration .textarea p{
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.registration p{
+    margin-left: 15px;
+}
+.registration .checkbox{
+    display: flex;
+    align-items:center;
+}
+.registration .checkbox p{
+    padding-left: 10px;
+}
+.registration .button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.registration button{
+    width: max-content;
+    height: 40px;
+    padding: 0px 60px;
+    margin-top: 10px;
+    color:white;
+    font-size: 15px;
+    font-weight: 700;
+    background: #f27628;
+    border:none;
+    border-radius:20px; 
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+@media screen and (max-width:950px){
+    .name_and_number{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+/*************End registration*************/
+
+/*************Start footer*************/
+.footer{
+    width: 100%;
+    color: white;
+    height: max-content;
+    background: #4e4e4e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 45px;
+}
+.footer p,.footer h3{
+    margin: 0;
+    padding-bottom: 15px;
+}
+.footer a{
+    font-size: 14px;
+}
+.footer a,.footer p{
+    padding: 10px 0px;
+}
+.logo{
+    padding-top: 40px;
+    padding-right: 35px;
+}
+.logo img{
+    width: 70px;
+}
+.flexFooter{
+    width: 70%;
+    height: max-content;
+    margin-top: 40px;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.flexOne{
+    display: flex;
+    align-items:center
+}
+.flexOne img{
+    width: 80px;
+}
+.flexTwo,.flexTree{
+    display: flex;
+    flex-direction: column;
+}
+.flexTwo{
+    margin: auto;
+}
+.footer h3{
+    font-size: 13px;
+}
+.footer a,.footer p{
+    font-size: 10px;
+    padding: 10px 0px;
+}
+.footer a{
+    color:white;
+    text-decoration: none;
+}
+/*Мапа*/
+.map{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+/*Копірайт*/
+.copyright{
+    width: 100%;
+    height: max-content;
+    background:#4e4e4e;
+}
+.copyright p{
+    font-size: 15px;
+    color:white;
+    text-align: center;
+    margin: 0;
+    padding: calc(35px - 7.5px) 0px;
+}
+/*Медіа запити*/
+@media screen and (max-width: 950px){
+    .flexOne img{
+        margin: auto;
+    }
+    .flexFooter{
+        width: 100%;
+        height: max-content;
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+    .flexOne,.flexTwo,.flexTree{
+        padding-top: 40px;
+    }
+}
+/*************End footer*************/
